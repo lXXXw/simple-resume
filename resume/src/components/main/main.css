@@ -1,0 +1,20 @@
+@page {
+  size: letter portrait;
+}
+
+.page {
+  background: white;
+  width: 8.5in;
+  height: 11in;
+}
+
+body {
+  background: yellow;
+}
+
+@media print {
+  @page {
+    margin: 0;
+    size: letter portrait;
+  }
+}
