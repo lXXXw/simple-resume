@@ -1,7 +1,7 @@
 import "./main.css";
 import React from "react";
 
-import { content } from "../../content/lxxxw";
+import { content } from "../../content/example";
 import { PersonalInfo } from "../personal_info/personal_info";
 import { Experience } from "../experience/experience";
 import { Education } from "../education/education";
@@ -11,7 +11,7 @@ import { Skills } from "../skills/skills";
 export class Main extends React.PureComponent {
   render() {
     return (
-      <div className={"page px-10 py-6"}>
+      <div className={"page px-10 py-8"}>
         <PersonalInfo info={content.personal_info}></PersonalInfo>
         <Skills skills={content.skillset}></Skills>
         <Experience experence_list={content.experience}></Experience>

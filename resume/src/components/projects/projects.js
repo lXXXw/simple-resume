@@ -17,7 +17,7 @@ export const Projects = (props) => {
           <div key={index}>
             <ProjectSectionSubtitle
               subtitle={project.name}
-              location={project.url}
+              url={project.url}
               caption={project.caption}
               time_range={parseTimeRange(project.start_time, project.end_time)}
             ></ProjectSectionSubtitle>

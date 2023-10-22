@@ -34,7 +34,7 @@ export const Experience = (props) => {
               {experence.achievements
                 .filter((achievement) => achievement.is_active)
                 .map((achievement, i) => (
-                  <div className="mt-1" key={i}>
+                  <div className="mt-1 ml-2" key={i}>
                     <div className="text-sm font-semibold">
                       {achievement.name}
                     </div>

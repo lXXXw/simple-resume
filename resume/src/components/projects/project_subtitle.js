@@ -1,5 +1,5 @@
 export const ProjectSectionSubtitle = (props) => {
-  const { subtitle, location, caption, time_range } = props;
+  const { subtitle, url, caption, time_range } = props;
   return (
     <div className="text-xs">
       <div className="flex flex-row">
@@ -7,7 +7,7 @@ export const ProjectSectionSubtitle = (props) => {
           {subtitle}
         </div>
         <div className="flex-auto my-auto text-right text-red-600 font-medium">
-          {location}
+          <a href={url}>{url.includes("github.com") ? "Github" : "Live"}</a>
         </div>
       </div>
     </div>
