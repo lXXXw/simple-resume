@@ -11,8 +11,12 @@ export default function Home() {
   });
   return (
     <div>
+      <div className="flex justify-center my-2">
+        <button className="bg-slate-100 px-1" onClick={handlePrint}>
+          Print this out!
+        </button>
+      </div>
       <Main ref={componentRef} />
-      <button onClick={handlePrint}>Print this out!</button>
     </div>
   );
 }
