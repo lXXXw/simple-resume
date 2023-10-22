@@ -1,18 +1,23 @@
 import { SectionTitle } from "../section_title/section_title";
-import { SectionSubtitle } from "../section_title/section_subtitle";
 import { parseLocation, parseTimeRange } from "@/utils";
 import { Bullets } from "../bullets/bullets";
+import { ExpSectionSubtitle } from "./experience_subtitle";
 
 export const Experience = (props) => {
   const title = "experience";
   const { experence_list, config } = props;
+
+  const renderProject = (projects) => {
+    console.log(projects);
+  };
+
   return (
     <div>
       <SectionTitle config={config} title={title}></SectionTitle>
       {experence_list.map((experence, index) => {
         return (
-          <div key={index}>
-            <SectionSubtitle
+          <div className="mb-1" key={index}>
+            <ExpSectionSubtitle
               config={config}
               subtitle={experence.company}
               location={parseLocation(
@@ -24,8 +29,27 @@ export const Experience = (props) => {
                 experence.start_time,
                 experence.end_time
               )}
-            ></SectionSubtitle>
-            <Bullets bullets={experence.bullets}></Bullets>
+            ></ExpSectionSubtitle>
+            <div className="">
+              {experence.achievements
+                .filter((achievement) => achievement.is_active)
+                .map((achievement, i) => (
+                  <div className="mt-1" key={i}>
+                    <div className="text-sm font-semibold">
+                      {achievement.name}
+                    </div>
+                    <Bullets bullets={achievement.bullets}></Bullets>
+                  </div>
+                ))}
+
+              {experence.summary == "" ? (
+                <div></div>
+              ) : (
+                <div>
+                  <Bullets bullets={experence.summary}></Bullets>
+                </div>
+              )}
+            </div>
           </div>
         );
       })}

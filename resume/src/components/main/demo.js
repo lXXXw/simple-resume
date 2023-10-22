@@ -6,4 +6,5 @@ const ChildComponent = React.forwardRef((props, ref) => (
     <button ref={ref}>Click me!</button>
   </div>
 ));
+ChildComponent.displayName = "ChildComponent";
 export default ChildComponent;

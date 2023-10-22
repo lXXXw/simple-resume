@@ -1,4 +1,4 @@
-import { SectionSubtitle } from "../section_title/section_subtitle";
+import { SectionSubtitle } from "./section_subtitle";
 import { SectionTitle } from "../section_title/section_title";
 import { parseLocation, parseTimeRange } from "@/utils";
 

@@ -1,7 +1,7 @@
-import { SectionTitle } from "../section_title/section_title";
-import { SectionSubtitle } from "../section_title/section_subtitle";
 import { parseTimeRange } from "@/utils";
 import { Bullets } from "../bullets/bullets";
+import { SectionTitle } from "../section_title/section_title";
+import { ProjectSectionSubtitle } from "./project_subtitle";
 
 export const Projects = (props) => {
   const title = "projects";
@@ -15,12 +15,12 @@ export const Projects = (props) => {
       {active_project_list.map((project, index) => {
         return (
           <div key={index}>
-            <SectionSubtitle
+            <ProjectSectionSubtitle
               subtitle={project.name}
               location={project.url}
               caption={project.caption}
               time_range={parseTimeRange(project.start_time, project.end_time)}
-            ></SectionSubtitle>
+            ></ProjectSectionSubtitle>
             <Bullets bullets={project.bullets}></Bullets>
           </div>
         );
