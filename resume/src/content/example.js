@@ -164,7 +164,7 @@ export const content = {
       },
       degree_detail:
         "Bachelor of Engineering, Electronic and Information Engineering",
-      start_time: "09-1-2012",
+      start_time: "09-01-2012",
       end_time: "06-30-2016",
     },
   ],
