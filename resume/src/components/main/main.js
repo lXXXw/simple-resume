@@ -1,7 +1,7 @@
 import "./main.css";
 import React from "react";
 
-import { content } from "../../content/lxxxw";
+import { content } from "../../content/example";
 import { PersonalInfo } from "../personal_info/personal_info";
 import { Experience } from "../experience/experience";
 import { Education } from "../education/education";
