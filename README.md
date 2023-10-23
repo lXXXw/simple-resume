@@ -34,7 +34,7 @@ Click the button to download the PDF version *(Firefox recommended for best copy
 
 ```javascript
       colors: {
-        "accent-color": "#c93120",  # change to what you like!
+        "accent-color": "#c93120",  // change to what you like!
       },
 ```
 
