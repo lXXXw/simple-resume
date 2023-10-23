@@ -6,7 +6,7 @@ export const SectionSubtitle = (props) => {
         <div className="text-base subpixel-antialiased font-bold">
           {subtitle}
         </div>
-        <div className="flex-auto my-auto text-right text-red-600 font-medium">
+        <div className="flex-auto my-auto text-right text-accent-color font-medium">
           {location}
         </div>
       </div>

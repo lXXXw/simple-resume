@@ -11,7 +11,7 @@ import { Skills } from "../skills/skills";
 export class Main extends React.PureComponent {
   render() {
     return (
-      <div className={"page px-10 py-8"}>
+      <div className={"page px-10 py-8 font-sans"}>
         <PersonalInfo info={content.personal_info}></PersonalInfo>
         <Skills skills={content.skillset}></Skills>
         <Experience experence_list={content.experience}></Experience>

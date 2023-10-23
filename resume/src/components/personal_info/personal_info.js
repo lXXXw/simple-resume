@@ -9,7 +9,7 @@ import { BsLinkedin, BsGithub } from "react-icons/bs";
 const ICON_GROUP_CLASS = "flex flex-row border-l-2 border-gray-300 px-1";
 
 export const PersonalInfo = (props) => {
-  const { config, info } = props;
+  const { info } = props;
   return (
     <div>
       <div>
@@ -30,15 +30,15 @@ export const PersonalInfo = (props) => {
           </div>
         </div>
         <div className={ICON_GROUP_CLASS}>
-          <EnvelopeIcon className="my-auto h-3 w-3 text-red-600 mr-0.5" />
+          <EnvelopeIcon className="my-auto h-3 w-3 text-accent-color mr-0.5" />
           <div>{info.email}</div>
         </div>
         <div className={ICON_GROUP_CLASS}>
-          <DevicePhoneMobileIcon className="my-auto h-3 w-3 text-red-600 mr-0.5" />
+          <DevicePhoneMobileIcon className="my-auto h-3 w-3 text-accent-color mr-0.5" />
           <div>{info.phone}</div>
         </div>
         <div className={ICON_GROUP_CLASS}>
-          <MapPinIcon className="my-auto h-3 w-3 text-red-600 mr-0.5" />
+          <MapPinIcon className="my-auto h-3 w-3 text-accent-color mr-0.5" />
           <div>{info.location}</div>
         </div>
       </div>

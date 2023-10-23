@@ -7,7 +7,7 @@ export const Skills = (props) => {
     <div>
       <SectionTitle title={"skills"}></SectionTitle>
       {skills.lines.map((line, i) => (
-        <div key={i} className="text-xs text-center">
+        <div key={i} className="text-sm text-center">
           {line.map((item, j) => (
             <span
               key={j}

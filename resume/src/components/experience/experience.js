@@ -5,7 +5,7 @@ import { ExpSectionSubtitle } from "./experience_subtitle";
 
 export const Experience = (props) => {
   const title = "experience";
-  const { experence_list, config } = props;
+  const { experence_list } = props;
 
   const renderProject = (projects) => {
     console.log(projects);
@@ -13,12 +13,11 @@ export const Experience = (props) => {
 
   return (
     <div>
-      <SectionTitle config={config} title={title}></SectionTitle>
+      <SectionTitle title={title}></SectionTitle>
       {experence_list.map((experence, index) => {
         return (
           <div className="mb-1" key={index}>
             <ExpSectionSubtitle
-              config={config}
               subtitle={experence.company}
               location={parseLocation(
                 experence.location.city,

@@ -12,16 +12,22 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors: {
+        "accent-color": "#c93120",
+      },
     },
     fontSize: {
-      xs: "0.65rem",
-      sm: "0.70rem",
-      base: "0.80rem",
+      xs: "0.68rem",
+      sm: "0.73rem",
+      base: "0.90rem",
       xl: "1.25rem",
       "2xl": "1.563rem",
       "3xl": "1.953rem",
       "4xl": "2.441rem",
       "5xl": "3.052rem",
+    },
+    fontFamily: {
+      sans: ["Arial"],
     },
   },
   plugins: [],
