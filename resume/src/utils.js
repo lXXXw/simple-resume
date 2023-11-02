@@ -7,7 +7,7 @@ export const parseTimeRange = (start_time, end_time) => {
 };
 
 function convertDate(d) {
-  if (d.toLowerCase() == "ongoing") {
+  if (d.toLowerCase() == "now") {
     return d;
   }
   const inputDateString = d;
@@ -19,7 +19,7 @@ function convertDate(d) {
     const date = new Date(`${year}-${month}-${day}`); // Create a Date object
     const formattedDate = new Intl.DateTimeFormat("en-US", {
       year: "numeric",
-      month: "short",
+      month: "2-digit",
     }).format(date);
     return formattedDate;
   } else {

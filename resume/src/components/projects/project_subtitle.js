@@ -6,8 +6,8 @@ export const ProjectSectionSubtitle = (props) => {
         <div className="text-base subpixel-antialiased font-bold">
           {subtitle}
         </div>
-        <div className="flex-auto my-auto text-right text-accent-color font-medium">
-          <a href={url}>{url.includes("github.com") ? "Github" : "Live"}</a>
+        <div className="flex-auto my-auto text-right font-thin text-gray-500">
+          {time_range}
         </div>
       </div>
     </div>

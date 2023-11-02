@@ -13,12 +13,21 @@ export const PersonalInfo = (props) => {
   return (
     <div>
       <div>
-        <div className="text-3xl text-center">
-          <span className="font-light">{info.first_name} </span>
-          <span className="font-semibold">{info.last_name}</span>
+        <div className="text-center">
+          <div className="flex flex-row items-center justify-center ">
+            <div className="text-3xl pr-1 basis-1/4">
+              <span className="text-accent-color font-light">
+                {info.first_name}{" "}
+              </span>
+              <span className="font-semibold">{info.last_name}</span>
+            </div>
+            <div className=" pl-1 text-sm w-72 border-l-2 border-solid border-gray-300 pl-3">
+              <p className="text-left font-['Arial']">{info.bio}</p>
+            </div>
+          </div>
         </div>
       </div>
-      <div className="flex flex-row text-xs justify-center">
+      <div className="flex flex-row text-xs justify-center mt-2">
         <div className="flex flex-row px-1">
           <BsLinkedin className=" h-3 w-3 text-blue-700 mr-0.5 my-auto" />
           <a href={info.linkedin}>Linkedin</a>

@@ -16,7 +16,7 @@ export const Experience = (props) => {
       <SectionTitle title={title}></SectionTitle>
       {experence_list.map((experence, index) => {
         return (
-          <div className="mb-1" key={index}>
+          <div className="" key={index}>
             <ExpSectionSubtitle
               subtitle={experence.company}
               location={parseLocation(
